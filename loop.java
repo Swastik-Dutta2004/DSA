@@ -13,6 +13,12 @@ public class loop {
         // }
         // scanner.close();
 
+        
+        int i = 1;
+        while ( i <= num) {
+            System.out.println(i);
+            i += 1;
+        }
     }
 
 }
