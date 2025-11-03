@@ -18,8 +18,8 @@ public class loop {
         // }
         int i = 1;
         while ( i <= num) {
-            System.out.println(i);
             i += 1;
+            System.out.println(i);
         }
     }
 
