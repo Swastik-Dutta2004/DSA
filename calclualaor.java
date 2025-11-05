@@ -28,7 +28,7 @@ public class calclualaor {
                 if (op == '%') {
                     ans = num1 % num2;
                 }
-                else if () {
+                else if (op == 'x') {
                     break;
                 }
                 else{
