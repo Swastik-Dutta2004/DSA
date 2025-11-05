@@ -17,10 +17,11 @@
 
 public class count {
     public static void main(String[] args) {
+        int digit = 0;
         int a = 1234;
         while (a > 0) {
             int temp = a % 10;
-            int digit = temp * 10;  
+            digit = temp * 10;  
         } 
         a /= 10;
         System.out.println(digit);
