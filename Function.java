@@ -30,7 +30,7 @@ public class Function {
 
     static void marks() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your numbre: ");
+        System.out.print("Enter your number: ");
         int num = sc.nextInt();
         if (num > 95) {
             System.out.println("Excellent");
