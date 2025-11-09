@@ -1,3 +1,5 @@
+package lecture11;
+
 // public class PremitiveSwap {
 //     public static void main(String[] args) {
 //         int a = 5 ;
@@ -40,7 +42,6 @@ public class PremitiveSwap {
         swap(arr);
 
         System.out.println("After Swapping:  a = " + arr[0] + ", b = " + arr[1]);
-
     }
 
     static void swap(int arr []){

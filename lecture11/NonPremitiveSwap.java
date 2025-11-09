@@ -1,6 +1,8 @@
+package lecture11;
+
 import java.util.Arrays;
 
-public class complexSwap {
+public class NonPremitiveSwap {
     public static void main(String[] args) {
         int arr [] = {1,2,3,4,5};
         swap(arr);
