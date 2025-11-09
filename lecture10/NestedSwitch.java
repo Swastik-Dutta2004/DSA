@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class NestedSwitch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the empID:");
+        System.out.print("Enter the empID: ");
         int emp = sc.nextInt();
-        String dep = sc.next();
 
         switch (emp) {
             case 1:
@@ -17,6 +16,9 @@ public class NestedSwitch {
                 System.out.print("Subhraneel goswami");
                 break;
             case 3:
+                System.out.println("Enter the department: ");
+                String dep = sc.next();
+
                 switch (dep) {
                     case "It":
                         System.out.print("It deparment");
@@ -24,13 +26,13 @@ public class NestedSwitch {
                     case "Manag":
                         System.out.print("Managment");
                         break;
-                
+
                     default:
-                    System.out.println("Not valid deparment");
+                        System.out.println("Not valid deparment");
                         break;
                 }
                 break;
-        
+
             default:
                 System.out.println("Enter a valid empID");
                 break;
