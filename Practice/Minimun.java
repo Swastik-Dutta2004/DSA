@@ -3,6 +3,9 @@ package Practice;
 import java.util.Scanner;
 
 public class Minimun {
+    public static void main(String[] args) {
+        int arr[] = minimunElemen();
+    }
     static Scanner sc = new Scanner(System.in);
     static int[] minimunElemen (){
         System.out.println("Enter 5 elements: ");
@@ -12,4 +15,5 @@ public class Minimun {
         }
         return arr;
     }
+    static void 
 }
