@@ -15,6 +15,7 @@ public class LinerSearch2 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
+        return arr;
     }
 
     static void findValue(int arr[]) {
