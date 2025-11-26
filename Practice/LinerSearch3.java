@@ -16,7 +16,7 @@ public class LinerSearch3 {
     static void indexNumber(int arr[]){
         System.out.println("Enter the number you want to find: ");
         int target = sc.nextInt();
-        boolean found;
+        boolean found = false;
         for (int i = 0; i < arr.length; i++) {
             if (target == arr[i]) {
                 System.out.println("Your element has appeared in the index number: " + arr[i]);
