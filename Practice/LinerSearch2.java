@@ -18,7 +18,7 @@ public class LinerSearch2 {
         return arr;
     }
 
-    static void findValue(int arr[]) {
+    static int findValue(int arr[]) {
         System.out.println("Enter the number you want to find: ");
         int target = sc.nextInt();
         int count = 0;
@@ -30,9 +30,9 @@ public class LinerSearch2 {
 
         if (count > 0) {
             System.out.println("Your entered number appears " + count + " time(s).");
-        } else {
-            System.out.println("Number not found.");
-        }
+        } 
+        return -1;
+        
     }
 
 }

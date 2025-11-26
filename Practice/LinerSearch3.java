@@ -7,6 +7,7 @@ public class LinerSearch3 {
         int arr [] = findelement();
         indexNumber(arr);
     }
+   
     static Scanner sc = new Scanner(System.in);
     static int[] findelement(){
         System.out.print("Enter 5 numbers: ");
