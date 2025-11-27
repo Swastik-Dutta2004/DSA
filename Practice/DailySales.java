@@ -7,7 +7,7 @@ public class DailySales {
         int arr[] = userInput();
         Maximum(arr);
         Minimun(arr);
-        
+        Average(arr);
     }
     static Scanner sc = new Scanner(System.in);
 
@@ -39,4 +39,12 @@ public class DailySales {
         System.out.println("The minimun sale is: "+ min);
     }
 
+    static void Average(int arr[]){
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        int result = sum / arr.length;
+        System.out.println("Average of the sales are: "+ result);
+    }
 }
