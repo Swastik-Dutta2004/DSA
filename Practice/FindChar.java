@@ -1,39 +1,28 @@
 package Practice;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class FindChar {
-    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        ArrayList<String> element = takingele();
-    }
+        Scanner sc = new Scanner(System.in);
 
-   static ArrayList<String> takingele() {
-    ArrayList<String> list = new ArrayList<>();
+        System.out.println("Enter the string: ");
+        String s = sc.nextLine();
 
-    System.out.println("Enter number of elements: ");
-    int n = sc.nextInt();
-    sc.nextLine(); // consume newline
+        System.out.println("Enter the element you want to find:");
+        String input = sc.next();
+        char target = input.charAt(0);
 
-    for (int i = 0; i < n; i++) {
-        System.out.println("Enter element " + (i + 1) + ": ");
-        String value = sc.nextLine();
-        list.add(value);
-    }
-    return list;
-}
-    static void FindEle (ArrayList<String>list){
-        System.out.println("Enter your the element you want to find: ");
-        String target = sc.nextLine();
         boolean found = false;
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == target) {
-                System.out.println("Your elements has found in the index number: "+ i);
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == target) {
+                found = true;
+                System.out.println("Your element has found in the index number: "+ i);
             }
         }
-
+        if (!found) {
+            System.out.println("Didn't found ");
+        }
     }
 
 }
