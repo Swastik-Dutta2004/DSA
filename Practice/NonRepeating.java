@@ -12,7 +12,7 @@ public class NonRepeating {
 
     static int[] UserInput() {
         System.out.println("Enter 5 input");
-        int arr[] = new int[5];
+        int arr[] = new int[6];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
@@ -34,6 +34,7 @@ public class NonRepeating {
                 System.out.println("Non-repeatable number is: " + current);
             }
         }
+        System.out.println("No non-repeating element found.");
         
     }
 }
