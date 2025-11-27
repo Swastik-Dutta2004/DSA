@@ -25,9 +25,13 @@ public class FindChar {
     return list;
 }
     static void FindEle (ArrayList<String>list){
+        System.out.println("Enter your the element you want to find: ");
         String target = sc.nextLine();
-        for (int i = 0; i < array.length; i++) {
-            
+        boolean found = false;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) == target) {
+                System.out.println("Your elements has found in the index number: "+ i);
+            }
         }
 
     }
