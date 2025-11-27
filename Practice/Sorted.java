@@ -22,10 +22,10 @@ public class Sorted {
     }
 
     static void sorter(int arr[]) {
-        boolean sorter = false;
+        boolean sorter = true;
         for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i] <= arr[i + 1]) {
-                sorter = true;
+            if (arr[i] >= arr[i + 1]) {
+                sorter = false;
             }
 
         }
