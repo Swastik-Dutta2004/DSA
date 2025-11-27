@@ -6,10 +6,10 @@ public class FindChar {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the string: ");
+        System.out.print("Enter the string: ");
         String s = sc.nextLine();
 
-        System.out.println("Enter the element you want to find:");
+        System.out.print("Enter the element you want to find:");
         String input = sc.next();
         char target = input.charAt(0);
 
