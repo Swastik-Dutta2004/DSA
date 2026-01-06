@@ -20,7 +20,7 @@ public class ActiveUser {
             arr.add(value);
         }
 
-        for (int i = 0; i < args.length; i++) {
+        for (int i = 0; i < arr.size(); i++) {
             if (arr.get(i) == 1) {
                 active++;
             } else {
