@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Sorted {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the number of elements: ");
@@ -16,21 +17,19 @@ public class Sorted {
             arr[i] = sc.nextInt();
         }
 
-        boolean sorted = false;
+        boolean sorted = true;  // assume sorted
 
-        for (int i = 1; i < arr.length; i++) {
-
+        for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i + 1]) {
-                sorted = true;
-
+                sorted = false;
+                break;
             }
         }
-        if (sorted) {
-            System.out.print("Its sorted");
-        }
-        if (!sorted) {
-            System.out.print("not sorted");
-        }
 
+        if (sorted) {
+            System.out.println("Its sorted");
+        } else {
+            System.out.println("Not sorted");
+        }
     }
 }
