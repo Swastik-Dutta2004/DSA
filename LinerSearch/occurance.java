@@ -20,6 +20,6 @@ public class occurance {
             }
         }
         
-        return -1;
+        return count;
     }
 }
