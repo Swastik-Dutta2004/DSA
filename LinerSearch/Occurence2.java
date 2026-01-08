@@ -2,7 +2,7 @@ package LinerSearch;
 
 import java.util.Scanner;
 
-public class Occurance2 {
+public class Occurence2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -2,7 +2,7 @@ package LinerSearch;
 
 import java.util.Scanner;
 
-public class studentID {
+public class StudentID {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

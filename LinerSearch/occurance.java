@@ -2,7 +2,7 @@ package LinerSearch;
 
 import java.util.Scanner;
 
-public class occurance {
+public class Occurance {
     public static void main(String[] args) {
         int[] arr = {12,3,4,56,67,67};
         Scanner sc = new Scanner(System.in);
