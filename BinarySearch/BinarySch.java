@@ -38,7 +38,7 @@ public class BinarySch {
                 end =  mid - 1;
             }
             else{
-                System.out.println("Your searched element has found in the index of : " + mid);
+                System.out.println("Your searched element has found in the index of :   " + mid);
                 return;
             }
         }
