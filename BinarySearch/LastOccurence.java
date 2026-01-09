@@ -22,26 +22,27 @@ public class LastOccurence {
         lastOccuence(arr, traget);
 
     }
-
-    static void lastOccuence(int[] arr, int target) {
+    static void lastOccuence(int[] arr, int target){
         int start = 0;
         int end = arr.length - 1;
         int ans = -1;
         while (start <= end) {
             int mid = start + (end - start) / 2;
-
-            if (arr[mid] == target) {
-                ans = mid;
-                start = mid + 1;
-            } else if (arr[mid] < target) {
-                start = mid + 1;
-            } else {
-                end = mid - 1;
+    
+            if (arr[mid] < target) {
+               start = mid + 1; 
             }
+            else if (arr[mid] > target) {
+                end =  mid - 1;
+            }
+           else{
+               ans = mid;
+               start = mid + 1;
+           }
         }
         if (ans != -1) {
             System.out.println("Last occurance of your target element is in: " + ans);
-        } else {
+        } else{
             System.out.println("Element doesn't found.");
         }
     }
