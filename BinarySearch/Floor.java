@@ -33,12 +33,8 @@ public class Floor {
             if (arr[mid] < target) {
                 ans = arr[mid];
                 start = mid + 1;
-            }else if (arr[mid] > target){
-                end = mid - 1;
             }else{
-                if (target == ) {
-                    
-                }
+                end = mid - 1;
             }
         }
             if (ans != 0) {
