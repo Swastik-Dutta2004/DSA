@@ -2,7 +2,7 @@ package BinarySearch;
 
 import java.util.Scanner;
 
-public class SmallestELe {
+public class Floor {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -19,26 +19,30 @@ public class SmallestELe {
         System.out.print("Enter the target value you want to find: ");
         int target = sc.nextInt();
 
-        SmallestELe(arr, target);
+        Floor(arr, target);
+
     }
-    static void SmallestELe(int[] arr, int target) {
+    static void Floor(int[] arr, int target){
         int start = 0;
         int end = arr.length - 1;
-        int ans = 0;
+        int ans = -1;
 
         while (start <= end) {
-            int mid = start + (end - start) / 2;
+            int mid = start + (end - start)/2;
 
-                if (target > arr[mid]) {
-                    ans = arr[mid];
-                    start = mid + 1;
-                }else{
-                    end = mid - 1;
+            if (arr[mid] < target) {
+                ans = arr[mid];
+                start = mid + 1;
+            }else if (arr[mid] > target){
+                end = mid - 1;
+            }else{
+                if (target == ) {
+                    
                 }
-            
             }
-            if (ans > 0) {
-                System.out.println("Nearest smallest element than " + target + " is " + ans);
+        }
+            if (ans != 0) {
+                System.out.println("Nearest largest element than " + target + " is " + ans);
             } else {
                 System.out.println("There is no element greater than " + target);
             }
