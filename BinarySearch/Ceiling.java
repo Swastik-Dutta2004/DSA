@@ -2,7 +2,7 @@ package BinarySearch;
 
 import java.util.Scanner;
 
-public class LargestELe {
+public class Ceiling {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -19,28 +19,26 @@ public class LargestELe {
         System.out.print("Enter the target value you want to find: ");
         int target = sc.nextInt();
 
-        FindSmallestELe(arr, target);
+        CeilingEle(arr, target);
     }
-
-    static void FindSmallestELe(int[] arr, int target){
+    static void CeilingEle(int[] arr, int target){
         int start = 0;
         int end = arr.length - 1;
         int ans = -1;
-
         while (start <= end) {
             int mid = start + (end - start)/2;
 
-            if (target < arr[mid]) {
+            if (target <= arr[mid]) {
                 ans = arr[mid];
                 end = mid - 1;
-            }else {
+            }else{
                 start = mid + 1;
             }
         }
-        if (ans != -1) {
-            System.out.println("Nearest greater eleement than " + target + " is "+ ans);
-        }else{
-            System.out.println("There is no element greater than "+ target);
-        }
+        if (ans != 0) {
+                System.out.println("Nearest largest element than " + target + " is " + ans);
+            } else {
+                System.out.println("There is no element greater than " + target);
+            }
     }
 }
