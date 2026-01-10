@@ -2,8 +2,7 @@ package LinerSearch;
 
 import java.util.Scanner;
 
-public class Occurence2 {
-
+public class Occurance2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -20,36 +19,28 @@ public class Occurence2 {
         System.out.print("Enter the target value: ");
         int target = sc.nextInt();
 
-        firstOccu(arr, target, n);
-        lasttOccu(arr, target, n);
+        FirstOccu(arr, target);
+        LasttOccu(arr, target);
     }
-    static int firstOccu(int[] arr, int target, int index){
-        boolean occurance = false;
+    static void FirstOccu(int[] arr, int target){
+        int ans = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
-                index = i;
-                occurance = true; 
+                ans = i;
                 break;
             }
         }
-        if (true) {
-            System.out.println("Target element first occurance is in "+ index + " index.");
-        }
-        return -1;
+        System.out.println("Your target value's first occurance is: "+ ans);
     }
-    static int lasttOccu(int[] arr, int target, int index){
-        boolean occurance = false;
-        for (int i = arr.length-1; i >= 0; i--) {
+
+    static void LasttOccu(int[] arr, int target){
+        int ans = 0;
+        for (int i = arr.length - 1; i >= 0; i--) {
             if (arr[i] == target) {
-                index = i;
-               occurance = true; 
-               break;
+                ans = i;
+                break;
             }
         }
-        if (true) {
-            System.out.println("Target element last occurance is in "+ index + " index.");
-        }
-        return -1;
-
+        System.out.println("Your target value's last occurance is: "+ ans);
     }
 }
