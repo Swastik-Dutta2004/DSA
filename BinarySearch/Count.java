@@ -15,7 +15,6 @@ public class Count {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-
         System.out.print("Enter the target value you want to find: ");
         int target = sc.nextInt();
 
