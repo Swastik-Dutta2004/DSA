@@ -2,7 +2,8 @@ package BinarySearch;
 
 import java.util.Scanner;
 
-public class RotateBS {
+public class DublicateRBS {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -29,7 +30,7 @@ public class RotateBS {
     }
 
     static int ans(int[] arr, int target) {
-        int pivot = RotatedArray(arr);
+        int pivot = DuplicatedRotatedArray(arr, target);
 
         if (pivot == -1) {
             return BinarySch(arr, target, 0, arr.length - 1);
@@ -63,22 +64,35 @@ public class RotateBS {
         return -1;
     }
 
-    static int RotatedArray(int[] arr) {
+    static int DuplicatedRotatedArray(int[] arr, int target) {
         int start = 0, end = arr.length - 1;
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
 
-            if (mid < end && arr[mid] > arr[mid + 1]) {
+            if (arr[mid] == target) {
                 return mid;
-            } else if (mid > start && arr[mid] < arr[mid - 1]) {
-                return mid - 1;
-            } else if (arr[start] > arr[mid]) {
-                return end = mid - 1;
-            } else if (arr[start] < arr[mid]) {
-                return start = mid + 1;
+            }
+
+            // duplicates case
+            if (arr[start] == arr[mid] && arr[mid] == arr[end]) {
+                start++;
+                end--;
+            } else if (arr[start] <= arr[mid]) {
+                if (target >= arr[start] && target < arr[mid]) {
+                    end = mid - 1;
+                } else {
+                    start = mid + 1;
+                }
+            } else {
+                if (target > arr[mid] && target <= arr[end]) {
+                    start = mid + 1;
+                } else {
+                    end = mid - 1;
+                }
             }
         }
         return -1;
+
     }
 }
