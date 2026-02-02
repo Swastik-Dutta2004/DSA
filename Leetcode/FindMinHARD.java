@@ -2,7 +2,7 @@ package Leetcode;
 
 public class FindMinHARD {
     public static void main(String[] args) {
-        int[] arr = {3,3,1,3};
+        int[] arr = {1,2,3};
         int ans = Search(arr);
         System.out.println(ans);
     }
@@ -14,10 +14,12 @@ public class FindMinHARD {
         while (start < end) {
             int mid = start + (end - start) / 2;
         
-            if (arr[end] <= arr[mid]) {
+            if (arr[end] < arr[mid]) {
                 start = mid + 1;
-            } else {
+            } else if (arr[end] > arr[mid]) {
                 end = mid;
+            }else{
+                end --;
             }
         }
         return arr[start];
