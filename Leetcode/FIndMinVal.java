@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class FIndMinVal {
+public class FindMinVal {
     public static void main(String[] args) {
         int[] arr = {7};
         int result = FindMin(arr);
