@@ -10,7 +10,7 @@ public class FirstQu {
         boolean Swapping;
         for (int i = 0; i < arr.length; i++) {
             Swapping = false;
-            for (int j = 1; j < arr.length - i; j++) {
+            for (int j = 1; j < arr.length - 1 - i; j++) {
                 if (arr[j] < arr[j - 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j - 1];
