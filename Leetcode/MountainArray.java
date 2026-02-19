@@ -14,7 +14,6 @@ public class MountainArray {
             System.out.println("Target found at index No.: " + result);
         }else{
             System.out.println("Target not found ");
-
         }
     }
     static int peak(int[] arr){
