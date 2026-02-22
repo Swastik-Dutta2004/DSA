@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/largest-number/submissions/1927239962/
+
 package Leetcode;
 
 import java.util.Arrays;
@@ -17,8 +19,6 @@ public class LargestNum {
         }
 
         Arrays.sort(str, (a,b) -> (b + a).compareTo(a + b));
-        
-        if(str[0].equals("0")) return "0";
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < str.length; i++) {
