@@ -10,11 +10,11 @@ public class GroupAnagrams {
         String[] str = {"eat","tea","tan","ate","nat","bat"};
         System.out.println(Anagram(str));
     }
+
     static List<List<String>> Anagram(String[] str){
         HashMap<String, List<String>> map = new HashMap<>();
 
         for (int i = 0; i < str.length; i++) {
-
             char[] arr = str[i].toCharArray();
             Arrays.sort(arr);
             String key = new String(arr);
@@ -25,6 +25,7 @@ public class GroupAnagrams {
 
             map.get(key).add(str[i]);
         }
+
         return new ArrayList<>(map.values());
     }
 }
