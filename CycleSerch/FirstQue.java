@@ -10,6 +10,7 @@
         }
         static void CycleSerch(int[] arr){
             int i = 0;
+            
             while (i < arr.length) {
                 int correctIndex = arr[i] - 1;  
 
