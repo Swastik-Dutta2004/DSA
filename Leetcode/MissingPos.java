@@ -17,21 +17,19 @@ public class MissingPos {
         while (i < arr.length) {
             int currentIndex = arr[i] - 1;
 
-            if (arr[i] != arr[currentIndex]) {
+            if (arr[i] > 0 && arr[i] <= arr.length && arr[i] != arr[currentIndex]) {
                 Swap(arr, i, currentIndex);
             } else {
                 i++;
             }
         }
 
-
-        ArrayList<Integer> ans = new ArrayList<>(); 
-        for (int j = 0; j <= arr.length; j++) {
-            if (arr[j] > 0 ) {
-                
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j] != j + 1) {
+                    return j + 1;
             }
         }
-        return -1;
+        return arr.length + 1;
     }
 
     static void Swap(int[] arr, int first, int second) {
