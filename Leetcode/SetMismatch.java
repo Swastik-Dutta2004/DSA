@@ -1,14 +1,17 @@
+// https://leetcode.com/problems/set-mismatch/submissions/1930402592/
+
 package Leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class SetMismatch {
     public static void main(String[] args) {
         int[] arr = {1,2,2,4};
-        ArrayList<Integer> result = CycleSort(arr);
-        System.out.println(result);
+        int[] result = CycleSort(arr);
+        System.out.println(Arrays.toString(result));
     }
-    static ArrayList<Integer> CycleSort(int[] arr){
+    static int[] CycleSort(int[] arr){
         int i = 0;
 
         while (i < arr.length) {
@@ -23,13 +26,18 @@ public class SetMismatch {
 
         ArrayList<Integer> ans = new ArrayList<>();
 
-        for (int j = 0; j < arr.length; j++) {
-            if (arr[j] != j + 1) {
-                ans.add(arr[j]);
-                ans.add(j+1);
+        for (int index = 0; index < arr.length; index++) {
+            if (arr[index] != index + 1) {
+                ans.add(arr[index]);
+                ans.add(index + 1);
             }
         }
-        return ans;
+
+        int[] list = new int[ans.size()];
+        for (int j = 0; j < list.length; j++) {
+            list[j] = ans.get(j);
+        }
+        return list;
     }
 
     static void Swap(int[] arr, int first, int second) {
