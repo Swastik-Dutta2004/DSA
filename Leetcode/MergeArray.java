@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/merge-sorted-array/description/
+
 package Leetcode;
 
 import java.util.ArrayList;
@@ -5,7 +7,7 @@ import java.util.Collections;
 
 public class MergeArray {
     public static void main(String[] args) {
-        int[] arr1 = {1,2,3,0,0,0};
+        int[] arr1 = {0};
         int[] arr2 = {2,5,6};
         ArrayList<Integer> ans =  Sorted(arr1, arr2, 0, 0);
         System.out.println(ans);

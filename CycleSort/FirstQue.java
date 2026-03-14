@@ -1,4 +1,4 @@
-    package CycleSerch;
+    package CycleSort;
 
     import java.util.Arrays;
 

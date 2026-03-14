@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class TwoDArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int arr [][] = new int[3][4];
+        int arr [][] = new int[3][4];       // FIRST IS ROW AND SECOND IS COLUMN [R][C]
 
         System.out.println("Enter 12 numbers:");
 
