@@ -8,7 +8,7 @@ public class SortedMatrix {
             if (arr[row][mid] == target) {
                 return new int[]{row, mid};
             }
-
+ 
             if (arr[row][mid] < target) {
                 cStart = mid + 1;
             }else{
